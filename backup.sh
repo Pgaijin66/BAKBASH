@@ -5,7 +5,7 @@ clear
 
 function main_function () {
 
-echo "Shell script to backup your files and folders"
+echo "		      BACKBASH		"
 echo ""
 echo "*************** Main Menu *******************"
 
@@ -33,49 +33,49 @@ case $number in
 	echo "Your files have been backed up"
 ;;
 2) echo "You have selected to backup spreadsheet."
-		echo "Please wait while we backup files "
+	echo "Please wait while we backup files "
         sudo tar -czPf /home/$USER/xls_back.tar.gz /home/prabesh/*.xls
         sleep 5
         echo "Your files have been backed up"
 ;;
 3) echo "You have selected to backup pictures."
-		echo "Please wait while we backup files "
-        sudo tar -czPf /home/$USER/img_back.tar.gz /home/prabesh/*.jpg /home/prabesh/*.jpg /home/prabesh/*.png
+	echo "Please wait while we backup files "
+        sudo tar -czPf /home/$USER/img_back.tar.gz /home/prabesh/*.jpeg /home/prabesh/*.jpg /home/prabesh/*.png
         sleep 5
         echo "Your files have been backed up"
 ;;
 4) echo "You have selected to backup everything"
-		echo "Please wait while we backup files "
+	echo "Please wait while we backup files "
         sudo tar -czPf /home/$USER/all_back.tar.gz /home/prabesh/*
         sleep 5
         echo "Your files have been backed up"
 ;;
 5) echo "You have selected to restore doc files"
-		echo "Please wait while we restore your files "
+	echo "Please wait while we restore your files "
         sudo tar -xvPf /home/$USER/doc_back.tar.gz /home/prabesh/
         sleep 5
         echo "Your files have been restored"
 ;;
 6) echo "You have selected to restore  "
-		echo "Please wait while we restore your files "
+	echo "Please wait while we restore your files "
         sudo tar -xvPf /home/$USER/xls_back.tar.gz /home/prabesh
         sleep 5
         echo "Your files have been backed up"
 ;;
 7) echo "You have selected to restore"
-		echo "Please wait while we restore your files "
+	echo "Please wait while we restore your files "
         sudo tar -czPf /home/$USER/img_back.tar.gz /home/prabesh/
         sleep 5
         echo "Your files have been restored"
 ;;
 8) echo "You have selected to restore"
-		echo "Please wait while we restore your files "
+	echo "Please wait while we restore your files "
         sudo tar -czPf /home/$USER/all_back.tar.gz /home/prabesh/
         sleep 5
         echo "Your files have been restored"
 ;;
 9) echo "You have selected to Exit"
-    echo "Exiting"
+    	echo "Exiting"
 	sleep 5
 	exit
 ;;
